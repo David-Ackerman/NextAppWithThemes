@@ -1,16 +1,19 @@
-import Head from 'next/head'
+import Head from 'next/head';
 
-export default function Home() {
+import { Container } from '../styles/pages/Home';
+
+const Home: React.FC = () => {
   return (
-    <div >
+    <Container>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Homepage</title>
       </Head>
+      <h1>React Structure</h1>
+      <strong>Amostra do tema de cores</strong>
+      <span>Amostra do tema de cores.</span>
+      <p>Estrutura da pagina do hackaton d1, feito com React.</p>
+    </Container>
+  );
+};
 
-      <main >
-        <h1>Hello world</h1>
-      </main>
-    </div>
-  )
-}
+export default Home;
